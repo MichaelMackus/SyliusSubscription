@@ -11,12 +11,14 @@
 
 namespace Sylius\Component\Subscription\Model;
 
+use Sylius\Component\Resource\Model\ResourceInterface;
+
 /**
  * Subscription Interface
  *
  * @author Daniel Richter <nexyz9@gmail.com>
  */
-interface SubscriptionInterface extends SchedulableInterface
+interface SubscriptionInterface extends SchedulableInterface, ResourceInterface
 {
     /**
      * @return \DateTime
